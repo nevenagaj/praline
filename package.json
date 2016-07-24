@@ -4,6 +4,7 @@
   "description": "Praline",
   "author": "Nevena Gaj <nevenagajevic@gmail.com>",
   "license": "MIT",
+  "main": "src/index.js",
   "scripts": {
     "container": "export NAME=praline WORKDIR=/$NAME; if docker ps -a | grep -q $NAME; then npm run container:start; else npm run container:run; fi",
     "container:start": "docker start -ai praline",
