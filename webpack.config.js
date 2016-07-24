@@ -17,7 +17,9 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+      title: 'Praline'
+    })
   ],
   resolve: {
     extensions: ['', '.js', '.scss', '.css'],
