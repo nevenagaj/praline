@@ -19,6 +19,10 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin()
   ],
+  resolve: {
+    extensions: ['', '.js', '.scss', '.css'],
+    packageMains: ['browser', 'web', 'browserify', 'main', 'style'],
+  },
   module: {
     loaders: [{
       test: /\.js$/,
