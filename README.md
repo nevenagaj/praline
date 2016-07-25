@@ -30,6 +30,7 @@ npm run build
 - [PostCSS][postcss] to process stylesheets
 - [Babel.js][babeljs] transpiler for adding syntax support for future ECMAScript proposals
 - [Service worker][service_worker] to make the application available offline
+- [imagemin][imagemin] for minifying images
 
 More at [awesome lists][awesome] or the [SO documentation][documentation].
 
@@ -38,6 +39,7 @@ More at [awesome lists][awesome] or the [SO documentation][documentation].
 [chocolatey]: https://chocolatey.org/packages/nodejs
 [chocolatey]: https://chocolatey.org/packages/nodejs
 [documentation]: stackoverflow.com/documentation
+[imagemin]: https://github.com/imagemin/imagemin
 [nodejs]: https://nodejs.org/en/
 [postcss]: https://github.com/postcss/postcss
 [sass]: http://sass-lang.com
