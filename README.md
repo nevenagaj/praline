@@ -37,7 +37,6 @@ More at [awesome lists][awesome] or the [SO documentation][documentation].
 [awesome]: https://github.com/sindresorhus/awesome-sass
 [babeljs]: https://babeljs.io/
 [chocolatey]: https://chocolatey.org/packages/nodejs
-[chocolatey]: https://chocolatey.org/packages/nodejs
 [documentation]: stackoverflow.com/documentation
 [imagemin]: https://github.com/imagemin/imagemin
 [nodejs]: https://nodejs.org/en/
