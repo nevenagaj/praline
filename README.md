@@ -1,5 +1,7 @@
 # praline
 
+[![][bithound_badge]][bithound] [![][bithound_dependencies_badge]][bithound_dependencies] [![][bithound_dev_dependencies_badge]][bithound_dev_dependencies]
+
 ## Dependencies
 
 ### Node.js
@@ -46,3 +48,10 @@ More at [awesome lists][awesome] or the [SO documentation][documentation].
 [service_worker]: https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
 [webpack]: http://webpack.github.io/
 [webpack_dev_server]: https://webpack.github.io/docs/webpack-dev-server.html
+
+[bithound]: https://www.bithound.io/github/nevenagaj/praline
+[bithound_badge]: https://www.bithound.io/github/nevenagaj/praline/badges/score.svg
+[bithound_dependencies]: https://www.bithound.io/github/nevenagaj/praline/master/dependencies/npm
+[bithound_dependencies_badge]: https://www.bithound.io/github/nevenagaj/praline/badges/dependencies.svg
+[bithound_dev_dependencies]: https://www.bithound.io/github/nevenagaj/praline/master/dependencies/npm
+[bithound_dev_dependencies_badge]: https://www.bithound.io/github/nevenagaj/praline/badges/devDependencies.svg
