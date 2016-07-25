@@ -30,7 +30,7 @@ module.exports = {
     loaders: [{
       test: /\.js$/,
       loaders: ['babel'],
-      include: './src',
+      include: path.join(__dirname, 'src'),
     }, {
       test: /\.scss$/,
       loaders: 'sass',
