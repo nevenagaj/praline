@@ -28,8 +28,8 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: ['react-hot-loader', 'babel'],
-      include: 'src'
+      loaders: ['react-hot', 'babel'],
+      include: './src',
     }, {
       test: /\.scss$/,
       loaders: 'sass',
