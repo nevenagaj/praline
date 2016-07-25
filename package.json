@@ -6,7 +6,7 @@
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
-    "build": "webpack build",
+    "build": "webpack",
     "start": "webpack-dev-server --watch --hot --host 0.0.0.0",
     "container": "export NAME=praline WORKDIR=/$NAME; if docker ps -a | grep -q $NAME; then npm run container:start; else npm run container:run; fi",
     "container:start": "docker start -ai praline",
