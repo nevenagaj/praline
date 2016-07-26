@@ -27,6 +27,11 @@ module.exports = {
     packageMains: ['browser', 'web', 'browserify', 'main', 'style'],
   },
   module: {
+    preLoaders: [{
+      test: /\.js?$/,
+      loader: 'standard',
+      exclude: /(node_modules|dist)/
+    }],
     loaders: [{
       test: /\.js$/,
       loaders: ['babel'],
