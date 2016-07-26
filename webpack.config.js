@@ -12,7 +12,7 @@ module.exports = {
     './src/index'
   ],
   output: {
-    path: 'dist',
+    path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: '/'
   },
@@ -46,8 +46,8 @@ module.exports = {
     }, {
       test: /\.(jpe?g|png|gif)$/i,
       loaders: [
-          'file?hash=sha512&digest=hex&name=[hash].[ext]',
-          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        'url?hash=sha512&digest=hex&name=images/[hash].[ext]',
+        'image-webpack?bypassOnDebug=true&optimizationLevel=7&interlaced=false'
       ]
     }]
   }
