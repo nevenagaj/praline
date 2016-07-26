@@ -34,6 +34,7 @@ npm run build
 - [Babel.js][babeljs] transpiler for adding syntax support for future ECMAScript proposals
 - [Service worker][service_worker] to make the application available offline
 - [imagemin][imagemin] for minifying images
+- [Web Font Loader][webfontloader] for referencing external fonts
 
 More at [awesome lists][awesome] or the [SO documentation][documentation].
 
@@ -50,6 +51,7 @@ More at [awesome lists][awesome] or the [SO documentation][documentation].
 [service_worker]: https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
 [standard]: http://standardjs.com/
 [standard_badge]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
+[webfontloader]: https://github.com/typekit/webfontloader
 [webpack]: http://webpack.github.io/
 [webpack_dev_server]: https://webpack.github.io/docs/webpack-dev-server.html
 
