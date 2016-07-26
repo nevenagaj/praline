@@ -1,6 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-// Main component.
+/**
+ * Main component.
+ * @return {Component}
+ */
 export const Praline = () => (
   <h1>Hello World</h1>
-);
+)
