@@ -7,7 +7,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --https --watch --hot --host 0.0.0.0",
+    "start": "webpack-dev-server -d --output-path=$(pwd)/dist --https --watch --watch-poll=1000 --hot --host 0.0.0.0",
     "container": "export NAME=praline WORKDIR=/$NAME; if docker ps -a | grep -q $NAME; then npm run container:start; else npm run container:run; fi",
     "container:start": "docker start -ai praline",
     "container:run": "docker run --name=$NAME -w /$NAME -p 8080:8080 -v $(pwd):/$NAME -v $(pwd)/package.json:/package.json -v /root/.npm -v /node_modules -e \"NODE_PATH=/node_modules\" -e \"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/node_modules/.bin\" --entrypoint=/bin/bash -it node:6"
