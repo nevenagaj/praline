@@ -29,8 +29,8 @@ npm run build
 - [ESLint][eslint] linter for JavaScript and JSX
 - [Webpack][webpack] is used to build the project sources
 - [Webpack Development Server][webpack_dev_server] run a development server (sourcemaps, live reloading)
-- [Sass][sass] for authoring the stylesheets
 - [PostCSS][postcss] to process stylesheets
+- [PostCSS-cssnext][cssnext] for adding syntax support for upcoming CSS features
 - [Babel.js][babeljs] transpiler for adding syntax support for future ECMAScript proposals
 - [Service worker][service_worker] to make the application available offline
 - [imagemin][imagemin] for minifying images
@@ -41,13 +41,12 @@ More at [awesome lists][awesome] or the [SO documentation][documentation].
 [awesome]: https://github.com/sindresorhus/awesome-sass
 [babeljs]: https://babeljs.io/
 [chocolatey]: https://chocolatey.org/packages/nodejs
+[cssnext]: http://cssnext.io/
 [documentation]: stackoverflow.com/documentation
 [eslint]: http://eslint.org/
 [imagemin]: https://github.com/imagemin/imagemin
 [nodejs]: https://nodejs.org/en/
 [postcss]: https://github.com/postcss/postcss
-[sass]: http://sass-lang.com
-[sass]: https://github.com/HugoGiraudel/awesome-sass
 [service_worker]: https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
 [standard]: http://standardjs.com/
 [standard_badge]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg

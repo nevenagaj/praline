@@ -25,6 +25,10 @@ module.exports = {
     extensions: ['', '.js', '.scss', '.css'],
     packageMains: ['browser', 'web', 'browserify', 'main', 'style'],
   },
+  postcss: () => ([
+    require('postcss-cssnext')(),
+    require('postcss-reporter')()
+  ]),
   module: {
     preLoaders: [{
       test: /\.js?$/,
@@ -36,12 +40,13 @@ module.exports = {
       loaders: ['babel'],
       include: path.join(__dirname, 'src'),
     }, {
-      test: /\.scss$/,
-      loaders: 'sass',
-      loader: 'style!css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass?sourceMap!toolbox'
+      test: /\.css$/,
+      loaders: 'style!css?sourceMap&modules&importLoaders=1!postcss',
+      include: path.join(__dirname, 'src')
     }, {
       test: /\.css$/,
-      loaders: 'style!css'
+      loaders: 'style!css?sourceMap',
+      exclude: path.join(__dirname, 'src')
     }, {
       test: /\.(jpe?g|png|gif)$/i,
       loaders: [
