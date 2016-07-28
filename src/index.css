@@ -1,3 +1,18 @@
+/* Media queries breakpoints */
+:root {
+  --xs: 0;
+  --sm: 544px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+}
+
+@custom-media --mobile   (min-width: val(--xs));
+@custom-media --phone    (min-width: val(--sm));
+@custom-media --tablet   (min-width: val(--md));
+@custom-media --desktop  (min-width: val(--lg));
+@custom-media --yuuge    (min-width: val(--xl));
+
 body {
   width: 100vw;
   height: 100vh;
