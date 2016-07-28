@@ -17,6 +17,7 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       title: 'Praline'
     })
