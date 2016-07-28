@@ -30,6 +30,10 @@ module.exports = {
     packageMains: ['browser', 'web', 'browserify', 'main', 'style'],
   },
   postcss: () => ([
+    require('stylelint')({
+      extends: 'stylelint-config-standard',
+      rules: []
+    }),
     require('postcss-cssnext')(),
     require('postcss-reporter')()
   ]),
