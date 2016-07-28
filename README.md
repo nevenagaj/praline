@@ -31,6 +31,7 @@ npm run build
 - [Webpack Development Server][webpack_dev_server] run a development server (sourcemaps, live reloading)
 - [PostCSS][postcss] to process stylesheets
 - [PostCSS-cssnext][cssnext] for adding syntax support for upcoming CSS features
+- [stylelint][stylelint] for linting styles
 - [Babel.js][babeljs] transpiler for adding syntax support for future ECMAScript proposals
 - [Service worker][service_worker] to make the application available offline
 - [imagemin][imagemin] for minifying images
@@ -50,6 +51,7 @@ More at [awesome lists][awesome] or the [SO documentation][documentation].
 [service_worker]: https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
 [standard]: http://standardjs.com/
 [standard_badge]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
+[stylelint]: https://github.com/stylelint/stylelint-config-standard
 [webfontloader]: https://github.com/typekit/webfontloader
 [webpack]: http://webpack.github.io/
 [webpack_dev_server]: https://webpack.github.io/docs/webpack-dev-server.html
