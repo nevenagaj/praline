@@ -1,6 +1,6 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'eval',
@@ -41,7 +41,7 @@ module.exports = {
     }],
     loaders: [{
       test: /\.js$/,
-      loaders: ['babel'],
+      loader: 'babel',
       include: path.join(__dirname, 'src'),
     }, {
       test: /\.css$/,
