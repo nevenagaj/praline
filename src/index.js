@@ -15,11 +15,9 @@ WebFont.load({
 
 import {Praline} from './components'
 
-/**
- * IIFE. Mounts the main component to the page.
- */
+// IIFE. Mounts the main component to the page.
 (function main () {
-  const container = document.createElement('div')
+  const container = document.createElement('article')
   document.body.appendChild(container)
 
   ReactDOM.render(<Praline />, container)

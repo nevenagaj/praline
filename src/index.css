@@ -30,7 +30,7 @@ body {
 
   @apply --font-raleway;
 
-  & > div:first-of-type {
+  & > article {
     width: 100%;
     height: 100%;
   }
