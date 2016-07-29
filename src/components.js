@@ -1,23 +1,26 @@
 import React from 'react'
 
 import style from './index.css'
+import style from './styles/index.css'
 
-const Logo = () => (
-  <div />
+const Header = () => (
+  <header className={style.header}>
+    <h3>Handmade</h3>
+    <h2>Pralines</h2>
+    <h4>From finest Belgian chocolate</h4>
+  </header>
 )
 
-const Backdrop = () => (
+const Content = () => (
   <div className={style.content}>
-    <Logo />
+    Foobar
   </div>
 )
 
-/**
- * Main component.
- * @return {Component}
- */
+// Main appliation component.
 export const Praline = () => (
   <div className={style.container}>
-    <Backdrop />
+    <Header />
+    <Content />
   </div>
 )
