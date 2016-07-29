@@ -5,6 +5,17 @@
 @custom-media --desktop (min-width: 992px);
 @custom-media --huge    (min-width: 1200px);
 
+/* Font families */
+:root {
+  --font-amatic: {
+    font-family: 'Amatic SC', cursive;
+  };
+
+  --font-raleway: {
+    font-family: 'Raleway', sans-serif;
+  };
+}
+
 html {
   font-size: 62.5%;
 }
@@ -16,6 +27,8 @@ body {
   font-size: 1.6rem;
   width: 100vw;
   height: 100vh;
+
+  @apply --font-raleway;
 
   & > div:first-of-type {
     width: 100%;
