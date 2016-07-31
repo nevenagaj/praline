@@ -1,5 +1,6 @@
 @import "./media.css";
 @import "./fonts.css";
+@import "./colors.css";
 
 html {
   font-size: 62.5%;
