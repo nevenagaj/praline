@@ -6,7 +6,7 @@ const Header = () => (
   <header className={style.header}>
     <h3>Handmade</h3>
     <h2>Pralines</h2>
-    <h4>From finest Belgian chocolate</h4>
+    <h4>Finest Belgian chocolate</h4>
   </header>
 )
 
