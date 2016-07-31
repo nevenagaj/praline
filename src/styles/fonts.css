@@ -1,0 +1,9 @@
+:root {
+  --font-amatic: {
+    font-family: 'Amatic SC', cursive;
+  };
+
+  --font-raleway: {
+    font-family: 'Raleway', sans-serif;
+  };
+}
