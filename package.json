@@ -34,6 +34,7 @@
     "normalize.css": "^4.2.0",
     "offline-plugin": "^3.4.2",
     "postcss-cssnext": "^2.7.0",
+    "postcss-import": "^8.1.0",
     "postcss-loader": "^0.9.1",
     "react-hot-loader": "^3.0.0-beta.2",
     "source-map-support": "^0.4.2",
