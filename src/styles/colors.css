@@ -1,6 +1,7 @@
 :root {
-  --color-white-opulence-chocolate: rgb(254, 250, 247);
+  --color-opulence-chocolate: rgb(254, 250, 247);
   --color-white-chocolate: rgb(229, 200, 161);
+  --color-mixed-chocolate: rgb(255, 241, 223);
   --color-milk-chocolate: rgb(100, 84, 94);
   --color-dark-chocolate: rgb(47, 51, 74);
 }
