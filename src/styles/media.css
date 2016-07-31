@@ -1,0 +1,6 @@
+/* Media queries breakpoints */
+@custom-media --mobile  (min-width: 0);
+@custom-media --phone   (min-width: 544px);
+@custom-media --tablet  (min-width: 768px);
+@custom-media --desktop (min-width: 992px);
+@custom-media --huge    (min-width: 1200px);

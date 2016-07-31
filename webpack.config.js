@@ -29,10 +29,9 @@ module.exports = {
     extensions: ['', '.js', '.scss', '.css'],
     packageMains: ['browser', 'web', 'browserify', 'main', 'style'],
   },
-  postcss: () => ([
-    require('stylelint')({
-      extends: 'stylelint-config-standard',
-      rules: []
+  postcss: (webpack) => ([
+    require('postcss-import')({
+      addToDependency: webpack
     }),
     require('postcss-cssnext')(),
     require('postcss-reporter')()
@@ -49,7 +48,7 @@ module.exports = {
       include: path.join(__dirname, 'src'),
     }, {
       test: /\.css$/,
-      loaders: 'style!css?sourceMap&modules&importLoaders=1!postcss',
+      loaders: 'style!css?sourceMap&modules!postcss',
       include: path.join(__dirname, 'src')
     }, {
       test: /\.css$/,
