@@ -10,7 +10,7 @@ import webfont from './lib/webfont'
   // Load fonts.
   webfont({
     families: ['Amatic SC'],
-    text: 'Pralines'
+    text: 'PRALINES'
   })
 
   webfont({
