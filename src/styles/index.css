@@ -39,26 +39,41 @@ body {
   display: flex;
   flex: 5 0 auto;
 
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-white-opulence-chocolate);
+  font-size: 10vw;
   background-repeat: no-repeat;
   background-image: url("../static/00.jpg");
   background-position: bottom center;
   background-size: cover;
 
+  & h2, & h3, & h4 {
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: #CCC 1px 0 10px;
+  }
 
-  font-size: 500%;
-
-  justify-content: center;
-  align-items: center;
   & h3 {
-
+    font-size: 0.6em;
+    border-top: 0.5rem solid red;
   }
 
   & h2 {
     @apply --font-amatic;
+    line-height: 1;
+    border-bottom: 0.5rem solid red;
+  }
+
+  & h3, & h2 {
+    padding: 0 0.5em;
   }
 
   & h4 {
-
+    font-size: 0.225em;
+    margin-top: 0.2em;
   }
 }
 
