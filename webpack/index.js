@@ -2,6 +2,21 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 
+// Returns absolute paths relative to the package root.
+const root = (...args) => (
+  path.join(process.cwd(), ...args)
+)
+
+// Returns true for paths that match our sources.
+const ours = (absolute) => (
+  absolute.startsWith(root('src'))
+)
+
+// Returns true for paths matching vendor sources.
+const theirs = (absolute) => (
+  !ours(absolute)
+)
+
 module.exports = {
   devtool: 'eval',
   target: 'web',
@@ -15,10 +30,11 @@ module.exports = {
     './src/index'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: root('dist'),
     filename: 'bundle.js',
     publicPath: '/'
   },
+  postcss,
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
@@ -40,26 +56,27 @@ module.exports = {
     preLoaders: [{
       test: /\.js?$/,
       loader: 'standard',
-      exclude: /(node_modules|dist)/
+      include: ours
     }],
     loaders: [{
       test: /\.js$/,
       loader: 'babel',
-      include: path.join(__dirname, 'src'),
+      include: ours
     }, {
       test: /\.css$/,
       loaders: 'style!css?sourceMap&modules!postcss',
-      include: path.join(__dirname, 'src')
+      include: ours
     }, {
       test: /\.css$/,
       loaders: 'style!css?sourceMap',
-      exclude: path.join(__dirname, 'src')
+      include: theirs
     }, {
       test: /\.(jpe?g|png|gif)$/i,
       loaders: [
         'url?hash=sha512&digest=hex&name=images/[hash].[ext]',
         'image-webpack?bypassOnDebug=true&optimizationLevel=7&interlaced=false'
-      ]
+      ],
+      include: ours
     }]
   }
 };
