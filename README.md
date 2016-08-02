@@ -1,6 +1,6 @@
 # praline
 
-[![][standard_badge]][standard][![][bithound_badge]][bithound] [![][bithound_dependencies_badge]][bithound_dependencies] [![][bithound_dev_dependencies_badge]][bithound_dev_dependencies]
+[![][standard_badge]][standard] [![][stylelint_standard_badge]][stylelint_standard] [![][bithound_badge]][bithound] [![][bithound_dependencies_badge]][bithound_dependencies] [![][bithound_dev_dependencies_badge]][bithound_dev_dependencies]
 
 ## Dependencies
 
@@ -52,6 +52,8 @@ More at [awesome lists][awesome] or the [SO documentation][documentation].
 [standard]: http://standardjs.com/
 [standard_badge]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
 [stylelint]: https://github.com/stylelint/stylelint-config-standard
+[stylelint_standard]: https://github.com/stylelint/stylelint-config-standard#stylelint-config-standard
+[stylelint_standard_badge]: https://img.shields.io/badge/stylelint-standard-green.svg
 [webfontloader]: https://github.com/typekit/webfontloader
 [webpack]: http://webpack.github.io/
 [webpack_dev_server]: https://webpack.github.io/docs/webpack-dev-server.html
