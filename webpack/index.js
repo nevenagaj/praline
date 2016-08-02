@@ -58,6 +58,10 @@ module.exports = {
       loader: 'babel',
       include: ours
     }, {
+      test: /\.html$/,
+      loader: 'nunjucks',
+      include: ours
+    }, {
       test: /\.css$/,
       loaders: 'style!css?sourceMap&modules!postcss',
       include: ours
