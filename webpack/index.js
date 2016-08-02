@@ -2,6 +2,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 
+const postcss = require('./postcss')
+
 // Returns absolute paths relative to the package root.
 const root = (...args) => (
   path.join(process.cwd(), ...args)
@@ -45,13 +47,6 @@ module.exports = {
     extensions: ['', '.js', '.scss', '.css'],
     packageMains: ['browser', 'web', 'browserify', 'main', 'style'],
   },
-  postcss: (webpack) => ([
-    require('postcss-import')({
-      addToDependency: webpack
-    }),
-    require('postcss-cssnext')(),
-    require('postcss-reporter')()
-  ]),
   module: {
     preLoaders: [{
       test: /\.js?$/,
