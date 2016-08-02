@@ -14,8 +14,8 @@ body {
   width: 100vw;
   height: 100vh;
 
-  color: --color-dark-chocolate;
   @apply --font-raleway;
+  color: --color-dark-chocolate;
 
   & > article {
     width: 100%;
@@ -31,7 +31,7 @@ body {
 
   align-content: stretch;
 
-  @media (--mobile) {
+  @media (--mobile) or (--phone) or (--portrait-tablet) or (--portrait-desktop) {
     flex-flow: column nowrap;
   }
 }
@@ -51,11 +51,13 @@ body {
   background-position: bottom center;
   background-size: cover;
 
-  & h2, & h3, & h4 {
+  & h2,
+  & h3,
+  & h4 {
     margin: 0;
     text-transform: uppercase;
-    text-shadow: #CCC 1px 0 10px;
-    text-shadow: 0px 1px 1px var(--color-white-chocolate), 0px 2px 1px var(--color-milk-chocolate), 0px 3px 1px var(--color-white-chocolate);
+    text-shadow: #ccc 1px 0 10px;
+    text-shadow: 0 1px 1px var(--color-white-chocolate), 0 2px 1px var(--color-milk-chocolate), 0 3px 1px var(--color-white-chocolate);
   }
 
   & h3 {
@@ -69,7 +71,8 @@ body {
     border-bottom: 0.3rem solid var(--color-dark-chocolate);
   }
 
-  & h3, & h2 {
+  & h2,
+  & h3 {
     padding: 0 1rem;
   }
 
