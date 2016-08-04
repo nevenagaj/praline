@@ -14,6 +14,9 @@
     "container:run": "docker run --name=$NAME -w /$NAME -p 8080:8080 -v $(pwd):/$NAME -v $(pwd)/package.json:/package.json -v /root/.npm -v /node_modules -e \"NODE_PATH=/node_modules\" -e \"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/node_modules/.bin\" --dns 8.8.8.8 --dns 8.8.4.4 --entrypoint=/bin/bash -it node:6",
     "container:rm": "docker rm -f praline"
   },
+  "engines": {
+    "node": "6.x"
+  },
   "dependencies": {
     "react": "^15.2.1",
     "react-dom": "^15.2.1"
