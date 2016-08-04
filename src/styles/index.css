@@ -38,7 +38,7 @@ body {
 
 .header {
   display: flex;
-  flex: 5 0 auto;
+  flex: 1 0 auto;
 
   flex-flow: column nowrap;
   justify-content: center;
@@ -85,5 +85,5 @@ body {
 
 .content {
   background-color: red;
-  flex: 10 0 auto;
+  flex: 1 0 auto;
 }
